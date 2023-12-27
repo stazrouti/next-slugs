@@ -22,17 +22,17 @@ export default function Home() {
 
       <p>Blogs using slugs name</p>
       <div>
-        <Link href="/Blogs/Blog1">
+        <Link href="/posts/Blog1">
           Go to Blog1
         </Link>
       </div>
       <div>
-        <Link href="/Blogs/Blog2">
+        <Link href="/posts/Blog2">
           Go to Blog2
         </Link>
       </div>
       <div>
-        <Link href="/Blogs/Blog3">
+        <Link href="/posts/Blog3">
           Go to Blog3
         </Link>
       </div>
