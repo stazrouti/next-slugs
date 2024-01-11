@@ -2,8 +2,8 @@
 import Link from "next/link";
 import "../../app/globals.css";
 const otherBlogs = [
-  { id: 1, title: "It", slug: "/posts/It" ,img :"https://www.shutterstock.com/image-photo/bloggingblog-concepts-ideas-white-worktable-600nw-1029506242.jpg"},
-  { id: 2, title: "World", slug: "/posts/World" ,img :"https://www.shutterstock.com/image-photo/bloggingblog-concepts-ideas-white-worktable-600nw-1029506242.jpg"},
+  { id: 1, title: "It" ,img :"https://www.shutterstock.com/image-photo/bloggingblog-concepts-ideas-white-worktable-600nw-1029506242.jpg"},
+  { id: 2, title: "World" ,img :"https://www.shutterstock.com/image-photo/bloggingblog-concepts-ideas-white-worktable-600nw-1029506242.jpg"},
 ];
 
 export default function Blog1() {
@@ -67,7 +67,7 @@ export default function Blog1() {
             <li key={blog.id} className="mb-2 flex ">
               
                 <div className="w-14 mr-4"><img src={blog.img}/></div>
-                <Link href={blog.slug}>
+                <Link href={blog.title}>
                   <div className="text-blue-500 hover:underline">{blog.title}</div>
                 </Link>
               
