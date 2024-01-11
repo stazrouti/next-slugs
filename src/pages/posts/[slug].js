@@ -1,15 +1,17 @@
 import { useRouter } from 'next/router';
-
+import Blog1 from './Blog1';
+import Blog2 from './Blog2';
+import Blog3 from './Blog3';
 const Post = () => {
   const router = useRouter();
   const { slug } = router.query;
   let content;
-  if (slug === 'Blog1') content = 'Blog1';
-  else if (slug === 'Blog2') content = 'Blog2';
-  else if (slug === 'Blog3') content = 'Blog3';
+  if (slug === 'Art') content = <Blog1/>;
+  else if (slug === 'It') content = <Blog2/>;
+  else if (slug === 'World') content = <Blog3/>;
   else content = 'Post undefined';
 
-  return (<p>Post: {content}</p>);
+  return (<p>{content}</p>);
 };
 
 export default Post;
