@@ -17,7 +17,7 @@ export default function Blog2() {
             <div className="text-blue-500 hover:underline">Return</div>
           </Link>
         </div>
-        <h1 className="text-3xl font-bold mb-4">Title of the Blog Post It</h1>
+        <h1 className="text-3xl font-bold mb-4">Title of the Blog It</h1>
         <p className="text-gray-600 mb-4">Published on January 10, 2024</p>
 
         <img
